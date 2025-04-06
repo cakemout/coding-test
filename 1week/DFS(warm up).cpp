@@ -35,3 +35,30 @@ void solution(vector<pair<char, char>> graph, char start)
     }
     dfs(start);
 }
+
+void init()
+{
+    adjList.clear();
+    visited.clear();
+    result.clear();
+}
+
+int main() {
+
+    solution({{'A','B'}, {'B','C'}, {'C','D'}, {'D','E'}},'A');
+    for(int i=0; i<result.size(); i++)
+    {
+        cout << result[i] << ' ';
+    }
+    cout<<endl;
+    init();
+
+    solution({{'A','B'}, {'A','C'}, {'B','D'}, {'B','E'}, {'C', 'F'}, {'E', 'F'}},'A');
+    for(int i=0; i<result.size(); i++)
+    {
+        cout << result[i] << ' ';
+    }
+    cout<<endl;
+    
+    return 0;
+}
