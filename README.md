@@ -8,7 +8,7 @@
  
  3. 재귀를 활용한 dfs에서 가장 최근의 노드를 돌아가는 백트래킹 동작이 어떤 방식으로 돌아가는지 설명
    - 코드로 예시
-```cpp
+cpp
 void dfs(char node) {
     result.push_back(node);
     visited.insert(node);
@@ -19,5 +19,5 @@ void dfs(char node) {
         }
     }
 }
----
+'''
  이처럼 노드가 방문하지 않으면 재귀호출하고 방문했다하면 다음 노드로 나아가는 방식을 이용한다. 
